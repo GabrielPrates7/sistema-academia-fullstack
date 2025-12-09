@@ -1,0 +1,23 @@
+# --- GERAL ---
+.DS_Store
+Thumbs.db
+
+# --- FLUTTER / DART ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+
+# --- JAVA / SPRING BOOT / INTELLIJ ---
+.idea/
+*.iml
+out/
+target/
+*.log
+*.class
+
+# --- VS CODE ---
+.vscode/
