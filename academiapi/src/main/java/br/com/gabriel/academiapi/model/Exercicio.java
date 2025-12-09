@@ -1,6 +1,4 @@
-// Este arquivo fica em: src/main/java/br/com/gabriel/academiapi/model/Exercicio.java
-
-package br.com.gabriel.academiapi.model; // Pacote correto do novo projeto
+package br.com.gabriel.academiapi.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,8 +8,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
-@Entity // Esta classe também é uma tabela
-@Table(name = "exercicios") // O nome da tabela é 'exercicios'
+@Entity
+@Table(name = "exercicios")
 public class Exercicio {
 
     @Id
@@ -20,18 +18,12 @@ public class Exercicio {
 
     private String nome;
 
-    // --- A Relação (A Mágica) ---
-    // @ManyToOne: "Muitos" Exercícios podem pertencer a "Um" Grupo.
     @ManyToOne
-    // @JoinColumn: "Qual coluna na tabela 'exercicios' guarda o ID do grupo?"
-    @JoinColumn(name = "grupo_id") // Este nome TEM que ser igual ao da sua tabela
+    @JoinColumn(name = "grupo_id")
     private Grupo grupo;
 
-    // Construtor vazio
     public Exercicio() {
     }
-
-    // --- Getters e Setters ---
 
     public Integer getId() {
         return id;
