@@ -29,8 +29,8 @@ O aplicativo conta com **2 telas principais** projetadas para serem simples e di
 
 ### 1. Backend (API)
 * Abra a pasta `academiapi` no IntelliJ.
-* Verifique a conexão com o banco `postgres` no `application.properties`.
-* Dê o **Run** na aplicação Spring Boot.
+* Crie um banco de dados vazio no PgAdmin.
+* **Importe/Restaure o arquivo `backup_academia.sql` (que está na raiz do projeto) para criar as tabelas e exercícios.** * Dê o **Run** na aplicação Spring Boot.
 
 ### 2. Mobile (App)
 * Com a API rodando, abra a pasta `app_academia` no VS Code.
